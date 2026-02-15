@@ -1,0 +1,4 @@
+disallowed-methods = [
+  { path = "std::result::Result::unwrap", reason = "Use proper error handling" },
+  { path = "std::option::Option::unwrap", reason = "Use proper error handling" },
+]

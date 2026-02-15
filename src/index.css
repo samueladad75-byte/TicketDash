@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-surface: #1e1e2e;
+  --color-surface-alt: #2a2a3e;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  .chart-container {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
